@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+
+.body, .mask {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.mask {
+    position: absolute;
+    -webkit-mask-image: url('../assets/blobanimation\ \(1\).svg');
+    mask-image: url('../assets/blobanimation\ \(1\).svg');
+    background: black;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: -20vw -25vh;
+    mask-size: 100px;
+    -webkit-mask-size: 800px;
+    z-index: 10;
+    
+}
+
+
+.masks {
+    position: fixed;
+    -webkit-mask-image: url('../assets/blobanimation.svg');
+    mask-image: url('../assets/blobanimation.svg');
+    mask-repeat: no-repeat;
+    background-color: pink;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: 70vw 10vh;
+    mask-size: 800px;
+    -webkit-mask-size: 800px;
+    z-index: 40;
+    will-change: auto;
+    pointer-events: none;
+}
